@@ -36,6 +36,8 @@ This API was developed with a focus on scalability, performance, and modern soft
     *   Automatic retry mechanism with dead letter queues.
     *   Queue monitoring and health check endpoints.
     *   Fallback processing when message queue is unavailable.
+ 
+    ![](https://github.com/jacksonn455/FluxStore/blob/main/images/rabbitmq.png)  
 
 *   **Data Processing & Validation:**
     *   **CSV parsing** with comprehensive error reporting.
@@ -158,12 +160,16 @@ The API will be available at `http://localhost:3000`.
 - Error handling scenarios
 - Database interactions
 
+  ![](https://github.com/jacksonn455/FluxStore/blob/main/images/jest.png)
+
 ## Test Environment
 - Tests run with a dedicated test database and mocked external dependencies to ensure reliable and isolated test execution.
 
 ### Stress and Load Testing with K6
 - Ensures FluxStore can handle CSV files with 200k+ rows using K6.
 - Verifies performance, scalability, and system stability under high load.
+
+  ![](https://github.com/jacksonn455/FluxStore/blob/main/images/stress-test.png)
 
 **Example:**
 ```
@@ -190,10 +196,14 @@ k6 run test/load/stress-test.js
 - Proactive Alerts: Detect issues before they affect users
 - Business Insights: Understand API usage patterns and processing efficiency
 - The New Relic agent starts automatically with your application and requires minim
+  
+![](https://github.com/jacksonn455/FluxStore/blob/main/images/new%20relic.png)
 
 ## Rate Limiting & Security
 
 The API implements comprehensive rate limiting to protect critical endpoints from abuse and ensure system stability, particularly for resource-intensive operations like CSV uploads.
+
+![](https://github.com/jacksonn455/FluxStore/blob/main/images/Rate%20Limiting.png)
 
 ### Rate Limiting Configuration
 
@@ -284,6 +294,8 @@ The FluxStore API includes comprehensive Swagger/OpenAPI documentation that prov
 - CSV Upload: File upload endpoint with validation details
 - Exchange Rates: Currency conversion endpoints and schemas
 - Health Checks: System monitoring endpoin
+
+![](https://github.com/jacksonn455/FluxStore/blob/main/images/swagger.png)
 
 ### Docker Setup
 
@@ -474,6 +486,9 @@ k6 run test/load/stress-test.js
 npm run lint
 npm run format
 ```
+## Mongo
+
+![](https://github.com/jacksonn455/FluxStore/blob/main/images/mongoDB.png)
 
 # FluxStore: Product Management Frontend
 
