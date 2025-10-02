@@ -1,0 +1,247 @@
+/* src/App.css */
+
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container and layout */
+.MuiContainer-root {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+}
+
+.MuiTypography-h4 {
+  color: #1a73e8 !important;
+  text-align: center !important;
+  margin-bottom: 20px !important;
+  font-weight: 600 !important;
+}
+
+/* File Upload Section */
+.MuiPaper-root.upload-section {
+  padding: 20px !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+
+.MuiPaper-root.upload-section input[type="file"] {
+  display: none !important;
+}
+
+.MuiPaper-root.upload-section label {
+  display: inline-block !important;
+  padding: 10px 20px !important;
+  background-color: #1a73e8 !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+}
+
+.MuiPaper-root.upload-section label:hover {
+  background-color: #1557b0 !important;
+}
+
+.MuiPaper-root.upload-section .selected-file {
+  margin-top: 10px !important;
+  color: #555 !important;
+}
+
+.MuiPaper-root.upload-section button {
+  margin-top: 10px !important;
+  padding: 10px 20px !important;
+  background-color: #34a853 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+}
+
+.MuiPaper-root.upload-section button:hover {
+  background-color: #2e9447 !important;
+}
+
+.MuiPaper-root.upload-section button:disabled {
+  background-color: #cccccc !important;
+  cursor: not-allowed !important;
+}
+
+/* Progress Bar */
+.progress-bar {
+  margin-top: 15px !important;
+  width: 100% !important;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background-color: #34a853 !important;
+}
+
+.progress-text {
+  margin-top: 5px !important;
+  color: #555 !important;
+  text-align: center !important;
+}
+
+/* Success Message */
+.success-message {
+  margin-top: 20px !important;
+  padding: 15px !important;
+  background-color: #e6f3e6 !important;
+  color: #2e7d32 !important;
+  border-radius: 4px !important;
+  text-align: center !important;
+  animation: fadeIn 0.5s ease-in !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Product Table Section */
+.product-table {
+  margin-top: 20px !important;
+  padding: 20px !important;
+  background-color: #fff !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-table h6 {
+  color: #1a73e8 !important;
+  margin-bottom: 15px !important;
+}
+
+.product-table .filter-controls {
+  display: flex !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+  margin-bottom: 15px !important;
+}
+
+.product-table .filter-controls .MuiTextField-root,
+.product-table .filter-controls .MuiSelect-root {
+  min-width: 150px !important;
+}
+
+.product-table .filter-controls button {
+  padding: 8px 16px !important;
+  background-color: #1a73e8 !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s !important;
+}
+
+.product-table .filter-controls button:hover {
+  background-color: #1557b0 !important;
+}
+
+.product-table table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px !important;
+  text-align: left !important;
+  border-bottom: 1px solid #eee !important;
+}
+
+.product-table th {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  font-weight: 600 !important;
+}
+
+.product-table td {
+  color: #555 !important;
+}
+
+.product-table .currency-conversions div {
+  margin: 2px 0 !important;
+  color: #666 !important;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.pagination .MuiPaginationItem-root {
+  color: #1a73e8 !important;
+}
+
+.pagination .Mui-selected {
+  background-color: #1a73e8 !important;
+  color: #fff !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .MuiContainer-root {
+    padding: 10px !important;
+  }
+
+  .MuiPaper-root.upload-section,
+  .product-table {
+    padding: 15px !important;
+  }
+
+  .product-table .filter-controls {
+    flex-direction: column !important;
+  }
+
+  .product-table table {
+    font-size: 14px !important;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .MuiTypography-h4 {
+    font-size: 1.5rem !important;
+  }
+
+  .product-table .filter-controls .MuiTextField-root,
+  .product-table .filter-controls .MuiSelect-root {
+    min-width: 100% !important;
+  }
+}
+
+/* Error Message */
+.error-message {
+  color: #d32f2f !important;
+  text-align: center !important;
+  margin-top: 10px !important;
+  font-size: 14px !important;
+}
