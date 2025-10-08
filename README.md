@@ -4,6 +4,8 @@ A back-end RESTful API developed with Node.js and NestJS for comprehensive produ
 
 The application applies modern backend architecture patterns, including message queues, caching strategies, and robust data validation, designed to easily scale for enterprise-level requirements.
 
+[video](https://youtu.be/ox4wOhMbOQc)
+
 ## Features
 
 This API was developed with a focus on scalability, performance, and modern software development practices. All core objectives have been successfully implemented:
