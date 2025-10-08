@@ -6,6 +6,8 @@ The application applies modern backend architecture patterns, including message 
 
 [video](https://youtu.be/ox4wOhMbOQc)
 
+![](https://github.com/jacksonn455/FluxStore/blob/main/images/front.png)
+
 ## Features
 
 This API was developed with a focus on scalability, performance, and modern software development practices. All core objectives have been successfully implemented:
